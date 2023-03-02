@@ -15,7 +15,7 @@ p      = 0.2;   % Channel parameter (probability of bit flipping)
 %% Part 1: BER for simple BSC channel
 
 % Generate a bit sequence
-bit_seq = GenerateBits(N_bits); % IMPLEMENT THIS: Generate a sequence of bits equal to the total number of bits
+bit_seq = GenerateBits(N_bits); %[DONE] IMPLEMENT THIS: Generate a sequence of bits equal to the total number of bits
 
 % Pass the bit sequence through the channel
 rec_sample_seq = BSC(bit_seq,1,p);  % Generate the received samples after passing through the bit flipping channel
