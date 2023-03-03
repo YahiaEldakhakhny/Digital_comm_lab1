@@ -10,7 +10,7 @@ function BER = ComputeBER(bit_seq,rec_bit_seq)
 % BER
 
 %%% WRITE YOUR CODE HERE
-    number_of_wrong_bits = sum(abs(bit_seq - rec_bit_seq));
+    number_of_wrong_bits = sum(xor(bit_seq, rec_bit_seq));
     BER = number_of_wrong_bits / length(bit_seq);
 %%%
 end
