@@ -47,6 +47,6 @@ switch case_type
         %%% WRITE YOUR CODE FOR PART 3 HERE
         % I don't know how this works so for now the reciever is just a
         % short circuit
-        rec_bit_seq = downsample(rec_sample_seq,fs);
+        rec_bit_seq = rec_sample_seq;
         %%%
 end

@@ -13,6 +13,7 @@ function bit_seq = GenerateBits(N_bits)
     % r x c matrix of random integers in the intervel [1, f] (it starts
     % from 1 by default) so I made it draw random integers from the
     % interval [1, 2] then I subtracted 1 to make all the numbers 0s and 1s
-    bit_seq = randi(2,1, N_bits) - 1;
+    % Youssef: edited it to pick randomly from the array of 0 and 1.
+    bit_seq = randi([0, 1], [1, N_bits]);
 end
     %%%

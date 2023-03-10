@@ -127,8 +127,8 @@ legend('Part 1-a','Part 2-a','Part 3-a','fontsize',10)
 
 
 % Generate a bit sequence
-fs_vect          = 1:1:100;              % Use this vector to extract different values of p in your code
-p=0.6;
+fs_vect          = 0:1:100;              % Use this vector to extract different values of p in your code
+p=0.2;
 BER_case_4_vec  = zeros(size(fs_vect));  % Use this vector to store the resultant BER
 
 bit_seq = GenerateBits(N_bits); % Generate a sequence of bits equal to the total number of bits
@@ -146,10 +146,13 @@ for fs_ind = 1:length(fs_vect)
 end
 
 figure
-plot(fs_vect,BER_case_4_vec,'linewidth',2); hold on;
+plot(p_vect,BER_case_1_vec,'x-k','linewidth',2); hold on;
+plot(p_vect,BER_case_2_vec,'o-r','linewidth',2); hold on;
+plot(p_vect,BER_case_3_vec,'d-b','linewidth',2); hold on;
 
-xlabel('Values of fs','fontsize',10)
+xlabel('Values of p','fontsize',10)
 ylabel('BER','fontsize',10)
+legend('Part 1-a','Part 2-a','Part 3-a','fontsize',10)
 
 
 %%% WRITE YOUR CODE HERE
