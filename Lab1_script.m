@@ -127,8 +127,8 @@ legend('Part 1-a','Part 2-a','Part 3-a','fontsize',10)
 
 
 % Generate a bit sequence
-fs_vect          = 1:1:100;              % Use this vector to extract different values of p in your code
-p=0.6;
+fs_vect          = 1:1:10;              % Use this vector to extract different values of p in your code
+p=0.4;
 BER_case_4_vec  = zeros(size(fs_vect));  % Use this vector to store the resultant BER
 
 bit_seq = GenerateBits(N_bits); % Generate a sequence of bits equal to the total number of bits
